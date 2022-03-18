@@ -1,0 +1,199 @@
+/* Обнуление */
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+html, body{
+    font-family: Montserrat;
+    background-color: #131313;
+}
+
+image {
+    vertical-align: top;
+}
+
+h1, h2 ,h3, h4, h5, h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+.wrapper {
+    overflow: hidden;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 77%;
+    margin: 0px auto;
+    box-sizing: content-box;
+}
+/*-----------------------------ШАПКА------------------------------*/
+.header{
+    width: 100%;
+}
+
+.header__top {
+    min-height: 110px;
+    display: flex;
+    align-items: center;
+}
+
+.menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 130px;
+}
+
+@media (max-width: 992px) {
+    .menu__list {
+        margin-left: 80px;
+    }
+}
+
+@media (max-width: 767px) {
+    .menu__list {
+        margin-left: 40px;
+    }
+}
+
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.menu__link {
+    color: #fff;
+    line-height: 116%;
+}
+
+.menu__item {
+    margin-left: 30px;
+}
+
+.menu__item:not(:first-child){
+    margin-left: 30px;
+}
+
+.menu {
+    padding-top: 5px;
+    }
+/*------------------------------------ПОДВАЛ-----------------------------------*/
+.footer{
+
+}
+
+/*-------------------------------------МЕЙН-------------------------------*/
+
+.page {
+    flex: 1 1 auto;
+}
+
+.mainblock {
+position: relative;
+}
+
+.page__mainblock {
+}
+
+.mainbclock__container {
+}
+
+.mainblock__body {
+    padding-top: 18%;
+    position: relative;
+    z-index: 2;
+}
+
+.mainblock__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 133%;
+    color: #fff;
+    max-width: 688px;
+    font-family: 'Playfair Display';
+}
+
+.mainblock__text {
+    font-size: 24px;
+    line-height: 120%;
+    color: #fff;
+    margin-top: 20px;
+    font-weight: 300;
+    word-spacing: 1.5px;
+}
+
+.mainblock__buttons {
+
+}
+
+.mainblock__button {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 52px;
+    margin-bottom: 205px;
+    background-color: #A41F1F;
+    justify-content: center;
+    align-items: center;
+    border-radius: 37px;
+    min-height: 55px;
+    min-width: 213px;
+    color: #fff;
+    box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.25);
+}
+
+.image__content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+
+.mainblock__image {
+}
+
+.mainblock__numbers {
+    position: absolute;
+    top: 19%;
+    right: 13%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 470px;
+}
+
+.mainblock__numbers__card {
+    width: 134px;
+    height: 82px;
+    border: 4px solid rgba(255, 255, 255, 0.5);
+    background: black;
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+    line-height: 185%;
+    text-align: center;
+}
