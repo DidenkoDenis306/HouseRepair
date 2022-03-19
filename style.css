@@ -12,12 +12,6 @@ a{
     text-decoration: none;
 }
 
-ul,
-ol,
-li {
-    list-style: none;
-}
-
 html, body{
     font-family: Montserrat;
     background-color: #131313;
@@ -37,6 +31,7 @@ h1, h2 ,h3, h4, h5, h6 {
     min-height: 100%;
     display: flex;
     flex-direction: column;
+    color: #fff;
 }
 
 .container {
@@ -59,6 +54,7 @@ h1, h2 ,h3, h4, h5, h6 {
     display: flex;
     flex-wrap: wrap;
     margin-left: 130px;
+    list-style: none;
 }
 
 @media (max-width: 992px) {
@@ -115,6 +111,8 @@ position: relative;
 }
 
 .mainbclock__container {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .mainblock__body {
@@ -127,7 +125,6 @@ position: relative;
     font-weight: 700;
     font-size: 48px;
     line-height: 133%;
-    color: #fff;
     max-width: 688px;
     font-family: 'Playfair Display';
 }
@@ -135,17 +132,16 @@ position: relative;
 .mainblock__text {
     font-size: 24px;
     line-height: 120%;
-    color: #fff;
     margin-top: 20px;
     font-weight: 300;
     word-spacing: 1.5px;
 }
 
 .mainblock__buttons {
-
 }
 
 .mainblock__button {
+    color: #fff;
     font-size: 16px;
     font-weight: 300;
     margin-top: 52px;
@@ -156,7 +152,6 @@ position: relative;
     border-radius: 37px;
     min-height: 55px;
     min-width: 213px;
-    color: #fff;
     box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.25);
 }
 
@@ -175,9 +170,8 @@ position: relative;
 }
 
 .mainblock__numbers {
-    position: absolute;
-    top: 19%;
-    right: 13%;
+    margin-top: 11%;
+    margin-left: 27%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -193,7 +187,113 @@ position: relative;
     font-family: Roboto;
     font-weight: 500;
     font-size: 20px;
-    color: #fff;
     line-height: 185%;
     text-align: center;
 }
+/*-----------------------------УСЛУГИ-----------------------*/
+.services {
+    margin-top: 150px;
+}
+.services__container {
+    display: flex;
+}
+.services__body {
+    padding-right: 66px;
+}
+.services__title {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 122%;
+    padding-bottom: 65px;
+}
+.services__menu {
+}
+.services__list {
+    list-style: disc;
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 300;
+    max-width: 315px;
+}
+.service__item {
+}
+.services__content {
+}
+
+.about_us {
+    margin-bottom: 150px;
+}
+
+.about_us__title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 123%;
+    padding-top: 150px;
+    text-align: center;
+}
+
+.about_us__content {
+    display: flex;
+    margin-top: 70px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about_us__content__item {
+    display: flex;
+    width: 540px;
+    height: 215px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+}
+
+.about_us__img1 {
+    width: 62px;
+    height: 65px;
+    margin-right: 53px;
+    margin-left: 10%;
+    margin-top: 12%;
+}
+
+.about_us__img2 {
+    width: 82px;
+    height: 72px;
+    margin-right: 53px;
+    margin-left: 10%;
+    margin-top: 12%;
+}
+
+.about_us__img3 {
+    width: 94px;
+    height: 49px;
+    margin-right: 4%;
+    margin-left: 10%;
+    margin-top: 15%;
+}
+
+.about_us__img4 {
+    width: 80px;
+    height: 70px;
+    margin-right: 53px;
+    margin-left: 10%;
+    margin-top: 12%;
+}
+
+.about_us__subtitle {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    margin-bottom: 3%;
+}
+
+.about_us__item__text {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.abot_us__text {
+    margin-top: 10%;
+    margin-right: 3%;
+}
+
+
