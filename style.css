@@ -296,4 +296,67 @@ position: relative;
     margin-right: 3%;
 }
 
+.about-us__container {
+
+}
+
+.about-us__content {
+    width: 547px;
+    position: relative;
+    z-index: 2;
+
+}
+
+.about-us__title {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 122%;
+    padding-top: 152px;
+    margin-bottom: 63px;
+}
+
+.about-us__a {
+    color: #A41F1F;
+}
+
+.about-us__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 122%;
+    margin-bottom: 30px;
+}
+
+.about-us__list {
+    list-style-type: "- ";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 122%;
+    padding-bottom: 152px;
+}
+
+.about-list__item {
+    margin-top: 15px;
+}
+
+.about-us__image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.about-us__black {
+    position: absolute;
+    height: 100%;
+    width: 45%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(89.71deg, rgba(19, 17, 16, 0.98) 19.4%, rgba(10, 9, 8, 0.81) 43.71%, rgba(0, 0, 0, 0) 74.45%);
+
+}
+
+
 
