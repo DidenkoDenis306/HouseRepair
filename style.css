@@ -387,6 +387,7 @@ position: relative;
 .info__item {
     width: 30%;
     display: flex;
+    margin-bottom: 60px;
 }
 
 .info__item__task {
