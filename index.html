@@ -20,7 +20,7 @@
 
 <body>
     <div class="wrapper">
-        <header class="header">
+        <header class="header lock-padding">
             <div class="container">
                 <div class="header-body">
                     <a class="header-logo">HouseRepair</a>
@@ -30,22 +30,22 @@
                     <nav class="header-menu">
                         <ul class="header-list">
                             <li>
-                                <a href="" class="header-link">Услуги</a>
+                                <a href="#services" class="header-link">Услуги</a>
                             </li>
                             <li>
-                                <a href="" class="header-link">Преимущества</a>
+                                <a href="#pros" class="header-link">Преимущества</a>
                             </li>
                             <li>
-                                <a href="" class="header-link">О нас</a>
+                                <a href="#about_us" class="header-link">О нас</a>
                             </li>
                             <li>
-                                <a href="" class="header-link">Как мы работаем</a>
+                                <a href="#info" class="header-link">Как мы работаем</a>
                             </li>
                             <li>
-                                <a href="" class="header-link">Портфолио</a>
+                                <a href="#portfolio" class="header-link">Портфолио</a>
                             </li>
                             <li>
-                                <a href="" class="header-link">Контакты</a>
+                                <a href="#footer" class="header-link">Контакты</a>
                             </li>
                         </ul>
                     </nav>
@@ -62,8 +62,8 @@
                             <p>При заказе полного ремонта квартиры,
                                 технический дизайн проект в подарок</p>
                         </div>
-                        <div class="home-btn">
-                            <a href="" class="btn">Заказать</a>
+                        <div class="home-btn open-popup" >
+                            <a href="#popup" class="btn ">Заказать</a>
                         </div>
                         <div class="home-info">
                             <div class="home-item">
@@ -89,7 +89,7 @@
                     <div class="home-blur"></div>
                 </div>
             </section>
-            <section class="services">
+            <section id="services" class="services">
                 <div class="services-container container">
                     <div class="services-body">
                         <div class="services-title">Услуги</div>
@@ -127,7 +127,7 @@
                     </div>
                 </div>
             </section>
-            <section class="pros">
+            <section id="pros" class="pros">
                 <div class="container">
                     <div class="pros-title">Почему мы?</div>
                     <div class="pros-content">
@@ -174,7 +174,7 @@
                     </div>
                 </div>
             </section>
-            <section class="about_us">
+            <section id="about_us" class="about_us">
 
                 <div class="container">
                     <div class="about_us-content">
@@ -199,7 +199,7 @@
                 <img class="about_us-image" src="images/about_image.jpg" alt="">
                 <div class="about_us-black"></div>
             </section>
-            <section class="info">
+            <section id="info" class="info">
                 <div class="container">
                     <div class="info__title title">Как мы работаем</div>
                     <div class="info__line">
@@ -288,7 +288,7 @@
                     </div>
                 </div>
             </section>
-            <section class="portfolio">
+            <section id="portfolio" class="portfolio">
                 <div class="container">
                     <div class="portfolio-title title">Портфолио</div>
                     <div class="portfolio-line">
@@ -339,17 +339,17 @@
                             <input class="form-input" placeholder="Фамилия" type="text" tabindex="2" name="surname" />
                         </div>
                         <div class="form-data2">
-                            <input class="form-input" placeholder="+ 380 ( )" type="number" tabindex="3" name="phone" />
+                            <input class="form-input" placeholder=" + 380 ( )" type="tel" tabindex="3" name="phone" />
                             <input class="form-input" placeholder="Почта" type="text" tabindex="4" name="mail" />
                         </div>
-                        <div class="form-btn">
+                        <div class="form-btn open-popup-comp">
                             <p class="form-btn-text">Отправить</p>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
-        <footer class="footer">
+        <footer id="footer" class="footer"> 
             <div class="container">
                 <div class="footer-content">
                     <div class="footer-text">
@@ -358,22 +358,22 @@
                             <div class="footer-nav">
                                 <ul class="footer-list1">
                                     <li>
-                                        <a href="" class="footer-link1">Услуги</a>
+                                        <a href="#services" class="footer-link1">Услуги</a>
                                     </li>
                                     <li>
-                                        <a href="" class="footer-link1">Преимущества</a>
+                                        <a href="#pros" class="footer-link1">Преимущества</a>
                                     </li>
                                     <li>
-                                        <a href="" class="footer-link1">О нас</a>
+                                        <a href="#about_us" class="footer-link1">О нас</a>
                                     </li>
                                     <li>
-                                        <a href="" class="footer-link1">Как мы работаем</a>
+                                        <a href="#info" class="footer-link1">Как мы работаем</a>
                                     </li>
                                     <li>
-                                        <a href="" class="footer-link1">Портфолио</a>
+                                        <a href="#portfolio" class="footer-link1">Портфолио</a>
                                     </li>
                                     <li>
-                                        <a href="" class="footer-link1">Контакты</a>
+                                        <a href="#footer" class="footer-link1">Контакты</a>
                                     </li>
                                 </ul>
                             </div>
@@ -418,6 +418,40 @@
                 <img class="footer-mob-img" src="./images/footer_mob.jpg" alt="">
             </div>
         </footer>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup-body">
+            
+            <div class="popup-content">
+                <div class="popup-close" ><img src="./images/close.svg" alt="" ></div>
+                <div class="popup-title">Оформить заказ</div>
+                <div class="popup-data">
+                    <div class="popup-in">
+                        <div class="popup-text">Ваше имя</div>
+                        <input type="text" class="popup-input">
+                    </div>
+                    <div class="popup-in">
+                        <div class="popup-text">Номер телефона</div>
+                        <input placeholder=" + 380 ( )" type="tel" class="popup-input">
+                    </div>
+                </div>
+                <div class="popup-btn open-popup-comp">
+                    Подтвердить
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup" class="popup popup-comp">
+        <div class="popup-body popup-comp-body">
+            <div class="popup-content">
+                <div class="popup-close" ><img src="./images/close.svg" alt="" ></div>
+                <div class="popup-title popup-comp-title">Спасибо, Ваша заявка успешно отправлена!</div>
+                <div class="popup-comp-text">
+                    Наш  менеджер свяжется с Вами
+                    <br>в течении 10 минут.
+                </div>
+            </div>
+        </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

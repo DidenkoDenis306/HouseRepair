@@ -1,6 +1,6 @@
 // Бургер
-$(document).ready(function() {
-    $('.header-burger').click(function(event) {
+$(document).ready(function () {
+    $('.header-burger').click(function (event) {
         $('.header-burger, .header-menu').toggleClass('active');
         $('body').toggleClass('lock');
     });
@@ -46,7 +46,7 @@ const nextSlide = () => {
 }
 
 const prevSlide = () => {
-    if(index == 0) {
+    if (index == 0) {
         index = slides.length - 1;
         prepareCurrentSlide(index);
     } else {
@@ -64,3 +64,79 @@ dots.forEach((item, indexDot) => {
 
 next.addEventListener('click', nextSlide);
 prev.addEventListener('click', prevSlide);
+
+// POPUP
+
+let popupBg = document.querySelector('.popup');
+let popup = document.querySelector('.popup-body');
+let openPopupButton = document.querySelectorAll('.open-popup');
+let closePopupButton = document.querySelectorAll('.popup-close');
+
+openPopupButton.forEach((button) => {
+    button.addEventListener('click', (e) => {
+        e.preventDefault();
+        popupBg.classList.remove('popup-nt')
+        popupBg.classList.add('open');
+        popup.classList.add('open');
+    })
+});
+
+let popupCompBg = document.querySelector('.popup-comp');
+let popupComp = document.querySelector('.popup-comp-body');
+let openPopupCompButtons = document.querySelectorAll('.open-popup-comp');
+
+let popupInputs = document.querySelectorAll('.popup-input');
+let mas = [];
+
+function save() {
+    for (let i = 0; i < popupInputs.length; i++) {
+        mas[i] = popupInputs[i].value;
+    }
+    console.log(mas);
+    if(mas.length < 2) {
+        console.log('loh');
+    }
+}
+save();
+
+
+
+openPopupCompButtons.forEach((button) => {
+    button.addEventListener('click', (e) => {
+        save();
+            if (mas[0] == '' || mas [1] == '') {
+                alert('Пожалуйста, введите все данные');
+                return false;
+            } else {
+                e.preventDefault();
+                if (popupBg.classList.contains('open')) {
+                    popupCompBg.classList.add('popup-nt');
+                }
+                popupCompBg.classList.add('open');
+                popupComp.classList.add('open');
+                popupBg.classList.add('popup-nt');
+                popupBg.classList.remove('open');
+                popup.classList.remove('open');
+            }
+        
+
+    })
+
+})
+
+
+
+closePopupButton.forEach((button) => {
+    button.addEventListener('click', (e) => {
+        e.preventDefault();
+        popupBg.classList.remove('open');
+        popup.classList.remove('open');
+        popupCompBg.classList.remove('open');
+        popupComp.classList.remove('open');
+        popupCompBg.classList.remove('popup-nt');
+    })
+});
+
+
+
+
