@@ -267,10 +267,12 @@ body.lock {
 
 #btn-prev {
     margin-right: 40px;
+    cursor: pointer;
 }
 
 #btn-next {
     margin-left: 40px;
+    cursor: pointer;
 }
 
 .dots-wrapper {
@@ -509,7 +511,7 @@ body.lock {
 
 .portfolio-item {
     width: 48%;
-    height: 489px;
+    height: 450px;
     border: 2px solid rgba(5, 147, 53, 0.95);
     box-sizing: border-box;
 }
@@ -822,6 +824,8 @@ body.lock {
     padding-bottom: 169px;
 }
 
+
+
 /* MEDIA */
 
 @media screen and (max-width: 992px) {
@@ -972,7 +976,7 @@ body.lock {
     }
 
     .portfolio-item {
-        height: 380px;
+        height: 320px;
     }
 
     .portfolio-item-image {
@@ -1377,5 +1381,38 @@ body.lock {
     .footer-map-mob {
         display: block;
         margin-top: 20px;
+    }
+
+    .popup-content {
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    .popup-title {
+        font-family: 'Playfair Display';
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 40px;
+        padding: 55px 86px 32px 90px;
+    }
+    
+    .popup-in {
+        padding: 12px 25px;
+    }
+
+    .popup-input {
+        width: 286px;
+    }
+
+    .popup-btn {
+        margin: 36px 52px 55px 60px;
+    }
+
+    .popup-comp-title {
+        padding: 55px 47px 32px 47px;
+    }
+
+    .popup-comp-text {
+        font-size: 16px;
     }
 }

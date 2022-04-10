@@ -1,3 +1,4 @@
+
 // Бургер
 $(document).ready(function () {
     $('.header-burger').click(function (event) {
@@ -84,26 +85,35 @@ openPopupButton.forEach((button) => {
 let popupCompBg = document.querySelector('.popup-comp');
 let popupComp = document.querySelector('.popup-comp-body');
 let openPopupCompButtons = document.querySelectorAll('.open-popup-comp');
+let openFormPopCompBtn = document.querySelectorAll('.form-popup-comp');
 
 let popupInputs = document.querySelectorAll('.popup-input');
 let mas = [];
 
-function save() {
+function savePopInp() {
     for (let i = 0; i < popupInputs.length; i++) {
         mas[i] = popupInputs[i].value;
     }
     console.log(mas);
-    if(mas.length < 2) {
-        console.log('loh');
-    }
+
 }
-save();
+savePopInp();
 
+let formInputs = document.querySelectorAll('.form-input');
+let formMas = [];
 
+function saveFormInp() {
+    for (let i = 0; i < formInputs.length; i++) {
+       formMas[i] = formInputs[i].value;
+    }
+    console.log(formMas);
+
+}
+saveFormInp();
 
 openPopupCompButtons.forEach((button) => {
     button.addEventListener('click', (e) => {
-        save();
+        savePopInp();
             if (mas[0] == '' || mas [1] == '') {
                 alert('Пожалуйста, введите все данные');
                 return false;
@@ -124,6 +134,28 @@ openPopupCompButtons.forEach((button) => {
 
 })
 
+openFormPopCompBtn.forEach((button) => {
+    button.addEventListener('click', (e) => {
+        saveFormInp();
+            if (formMas[0] == '' || formMas [1] == '' || formMas [2] == '' || formMas [3] == '') {
+                alert('Пожалуйста, введите все данные');
+                return false;
+            } else {
+                e.preventDefault();
+                if (popupBg.classList.contains('open')) {
+                    popupCompBg.classList.add('popup-nt');
+                }
+                popupCompBg.classList.add('open');
+                popupComp.classList.add('open');
+                popupBg.classList.add('popup-nt');
+                popupBg.classList.remove('open');
+                popup.classList.remove('open');
+            }
+        
+
+    })
+
+})
 
 
 closePopupButton.forEach((button) => {
