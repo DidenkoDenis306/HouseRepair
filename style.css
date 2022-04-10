@@ -1401,7 +1401,7 @@ body.lock {
     }
 
     .popup-input {
-        width: 286px;
+        width: 98%;
     }
 
     .popup-btn {
@@ -1414,5 +1414,9 @@ body.lock {
 
     .popup-comp-text {
         font-size: 16px;
+    }
+
+    .popup-close {
+        margin-left: 90%;
     }
 }
